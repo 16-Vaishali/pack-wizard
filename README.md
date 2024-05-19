@@ -24,7 +24,7 @@ npx pack-wizard
 ## Usage
 Once you click enter, you will get a prompt asking what kind of project you are working on. Once you select that, you will be asked for list of packages. Select the required packages, and chill for a while.
 Pack-wizard will install them for you.
-```
+
 
  **Demo**
 
