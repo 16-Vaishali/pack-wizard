@@ -1,23 +1,38 @@
 {
-  "name": "project",
+  "name": "pack-wizard",
   "version": "1.0.0",
-  "description": "",
+  "description": "A CLI tool to help developers select and install packages quickly.",
   "main": "index.js",
-  "type": "module",
+  "bin": {
+    "pack-wizard": "./index.js"
+  },
   "scripts": {
+    "pack-wizard": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/16-Vaishali/pack-wizard.git"
+  },
+  "keywords": [
+    "CLI",
+    "packages",
+    "install",
+    "developer tools"
+  ],
+  "author": "Vaishali <vaishalib.2003@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/16-Vaishali/pack-wizard/issues"
+  },
+  "homepage": "https://github.com/16-Vaishali/pack-wizard#readme",
   "dependencies": {
-    "chalk": "^5.3.0",
-    "chalk-animation": "^2.0.3",
-    "express": "^4.19.2",
-    "figlet": "^1.7.0",
-    "gradient-string": "^2.0.2",
-    "inquirer": "^9.2.20",
+    "chalk": "^4.1.2",
+    "chalk-animation": "^1.0.0",
+    "inquirer": "^8.0.0",
     "nanospinner": "^1.1.0",
-    "npm-check-updates": "^16.14.20"
+    "figlet": "^1.5.0",
+    "gradient-string": "^1.1.0",
+    "node-fetch": "^3.0.0"
   }
 }
