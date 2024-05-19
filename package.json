@@ -1,19 +1,19 @@
 {
-  "name": "pack-wizard",
+  "name": "package-wizard",
   "version": "1.0.0",
   "description": "A CLI tool to help developers select and install packages quickly.",
   "main": "index.js",
-   "type": "module",
+  "type": "module",
   "bin": {
-    "pack-wizard": "./index.js"
+    "package-wizard": "./index.js"
   },
   "scripts": {
-    "pack-wizard": "node index.js",
+    "package-wizard": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/16-Vaishali/pack-wizard.git"
+    "url": "git+https://github.com/16-Vaishali/package-wizard.git"
   },
   "keywords": [
     "CLI",
@@ -24,9 +24,9 @@
   "author": "Vaishali <vaishalib.2003@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/16-Vaishali/pack-wizard/issues"
+    "url": "https://github.com/16-Vaishali/package-wizard/issues"
   },
-  "homepage": "https://github.com/16-Vaishali/pack-wizard#readme",
+  "homepage": "https://github.com/16-Vaishali/package-wizard#readme",
   "dependencies": {
     "chalk": "^4.1.2",
     "chalk-animation": "^1.0.0",
