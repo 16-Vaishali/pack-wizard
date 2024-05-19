@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A CLI tool to help developers select and install packages quickly.",
   "main": "index.js",
+   "type": "module",
   "bin": {
     "pack-wizard": "./index.js"
   },
