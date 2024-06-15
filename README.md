@@ -35,12 +35,14 @@ Package-wizard will install them for you.
  **Get the package list**
 
 ``` sh
-pkg```
+pkg
+```
 
 Get the list of packages installed in your project along with the available version and the installed version in a neat table.
 
 ```sh
-del```
+del
+```
 
 Tired of deleting multiple packages, just type the above command to see the list of packages. There just select the packages you w3ant to delete and press enter
 
