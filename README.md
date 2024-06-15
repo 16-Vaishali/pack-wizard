@@ -1,8 +1,8 @@
 
-# package-wizard 
+# package-hub
 
 
-**package-wizard is a command-line interface tool that helps developers quickly set up and scaffold projects by selecting packages from a curated list. 
+**package-hub is a command-line interface tool that helps developers quickly set up and scaffold projects by selecting packages from a curated list. 
 It simplifies the process of installing and configuring commonly used packages for various project types.**
 
 

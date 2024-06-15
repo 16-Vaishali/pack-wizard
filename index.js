@@ -273,5 +273,5 @@ async function installPackage() {
 
 (async function main() {
     await welcome();
-    // await projType();
+    await projType();
 })();

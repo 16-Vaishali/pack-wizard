@@ -1,16 +1,16 @@
 {
-  "name": "package-wizard",
+  "name": "package-hub",
   "version": "1.0.0",
   "description": "A CLI tool to help developers select and install packages quickly.",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "package-wizard": "./index.js",
+    "package-hub": "./index.js",
     "del": "./delete.js",
     "pkg": "./packages.js"
   },
   "scripts": {
-    "package-wizard": "node index.js",
+    "package-hub": "node index.js",
     "del": "node delete.js",
     "pkg": "node packages.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -40,6 +40,7 @@
     "figlet": "^1.5.0",
     "gradient-string": "^2.0.2",
     "inquirer": "^8.0.0",
-    "nanospinner": "^1.1.0"
+    "nanospinner": "^1.1.0",
+    "package-hub": "^1.0.0"
   }
 }
