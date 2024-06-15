@@ -8,7 +8,7 @@ import { promisify } from 'util';
 import { exec } from 'child_process';
 import figlet from 'figlet';
 import gradient from 'gradient-string';
-// Assuming you're using Node.js 18+ for fetch support or have node-fetch installed
+import boxen from 'boxen';
 
 const execAsync = promisify(exec);
 const sleep = (ms = 2000) => new Promise(res => setTimeout(res, ms));
@@ -23,8 +23,8 @@ async function welcome() {
     rainbowTitle.stop();
     const response = await fetch('https://v2.jokeapi.dev/joke/Programming?type=single');
     const jokeData = await response.json();
-    console.log(chalk.magenta("Today's TechByte:"));
-    console.log(chalk.green(jokeData.joke));
+    console.log(chalk.blueBright("Today's TechByte:"));
+    console.log(boxen(chalk.green(jokeData.joke)));
     await sleep();
 }
 
@@ -133,7 +133,7 @@ async function others2() {
             name: 'uiLib',
             message: 'Select the UI library you want:',
             type: 'list',
-            choices: ['@mui/material', 'shadcn-ui', 'acertinity-ui', 'ant-design', 'react-bootstrap', 'blueprint-js']
+            choices: ['@mui/material', 'shadcn-ui',  'ant-design', 'react-bootstrap', 'blueprint-js']
         });
         switch (uiLib.uiLib) {
             case '@mui/material':
@@ -141,9 +141,6 @@ async function others2() {
                 break;
             case 'shadcn-ui':
                 packages += ' shadcn-ui';
-                break;
-            case 'acertinity-ui':
-                packages += ' acertinity-ui';
                 break;
             case 'ant-design':
                 packages += ' antd';
@@ -216,7 +213,7 @@ async function others5() {
     if (needTest.needTest) {
         let choices = [];
         if (frontFramework === 'React')
-            choices = ['jest', 'cypress', 'karma', 'nightwatch.js', 'react-testing-library'];
+            choices = ['jest', 'cypress', 'karma', 'react-testing-library'];
         else if (frontFramework === 'Vue')
             choices = ['vue-test-utils', 'cypress', 'karma'];
         else if (frontFramework === 'Angular')
@@ -276,5 +273,5 @@ async function installPackage() {
 
 (async function main() {
     await welcome();
-    await projType();
+    // await projType();
 })();

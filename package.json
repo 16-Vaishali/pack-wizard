@@ -5,10 +5,14 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "package-wizard": "./index.js"
+    "package-wizard": "./index.js",
+    "del": "./delete.js",
+    "pkg": "./packages.js"
   },
   "scripts": {
     "package-wizard": "node index.js",
+    "del": "node delete.js",
+    "pkg": "node packages.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,12 +32,14 @@
   },
   "homepage": "https://github.com/16-Vaishali/package-wizard#readme",
   "dependencies": {
+    "boxen": "^7.1.1",
     "chalk": "^4.1.2",
     "chalk-animation": "^1.0.0",
-    "inquirer": "^8.0.0",
-    "nanospinner": "^1.1.0",
+    "cli-table3": "^0.6.5",
+    "execa": "^9.2.0",
     "figlet": "^1.5.0",
-    "gradient-string": "^1.1.0",
-    "node-fetch": "^3.0.0"
+    "gradient-string": "^2.0.2",
+    "inquirer": "^8.0.0",
+    "nanospinner": "^1.1.0"
   }
 }
