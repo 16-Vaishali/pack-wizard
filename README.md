@@ -12,24 +12,35 @@ It simplifies the process of installing and configuring commonly used packages f
 Install globally:
 
 ```sh
-npm install -g package-wizard
+npm install -g package-hub
 ```
 
 Or run with [npx](https://docs.npmjs.com/cli/v7/commands/npx):
 
 ```sh
-npx package-wizard
+npx package-hub
 ```
 
 ## Usage
 Now type this command to start the tool.
 ```sh
-package-wizard
+package-hub
 ```
 
 Once you click enter, you will get a prompt asking what kind of project you are working on. Once you select that, you will be asked for list of packages. Select the required packages, and chill for a while!
 Package-wizard will install them for you.
 
+## Other Features
+
+ **Get the package list**
+
+```pkg```
+
+Get the list of packages installed in your project along with the available version and the installed version in a neat table.
+
+```del```
+
+Tired of deleting multiple packages, just type the above command to see the list of packages. There just select the packages you w3ant to delete and press enter
 
  **Demo**
 
